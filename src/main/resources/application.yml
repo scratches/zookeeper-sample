@@ -1,0 +1,19 @@
+management.security.enable: false
+endpoints:
+  refresh:
+    sensitive: false
+server:
+  port: 8082
+ribbon:
+  zookeeper:
+    enabled: true
+spring:
+  application:
+    name: HelloServer
+  cloud:
+    zookeeper:
+      connect-string: 127.0.0.1:2180,127.0.0.1:2181
+      discovery:
+        root: /services
+        metadata:
+          version: 1.0
