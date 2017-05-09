@@ -32,7 +32,8 @@ dependencyManagement {
 }
 repositories {
     mavenLocal()
-    maven { url 'http://nexus.dianrong.com/nexus/content/groups/public/' }
+    mavenCentral()
+    // maven { url 'http://nexus.dianrong.com/nexus/content/groups/public/' }
 }
 
 dependencies {
